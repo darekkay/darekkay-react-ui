@@ -1,0 +1,29 @@
+### Node.js ###
+
+node_modules
+/.pnp
+.pnp.js
+package-lock.json
+
+### IDE ###
+
+/.idea/dataSources/
+/.idea/httpRequests/
+/.idea/shelf/
+/.idea/dataSources.local.xml
+/.idea/markdown.xml
+/.idea/php.xml
+/.idea/tasks.xml
+/.idea/workspace.xml
+
+### Misc ###
+
+.eslintcache
+*.log
+.DS_Store
+temp/
+coverage/
+
+### App ###
+
+dist/
