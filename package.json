@@ -1,7 +1,7 @@
 {
   "name": "@darekkay/react-ui",
   "description": "My shared React components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bugs": {
     "url": "https://github.com/darekkay/darekkay-react-ui/issues",
