@@ -7,5 +7,5 @@
   "dts": true,
   "splitting": true,
   "format": ["cjs", "esm"],
-  "external": ["react", "react-dom"]
+  "external": ["clsx", "react", "react-dom"]
 }
