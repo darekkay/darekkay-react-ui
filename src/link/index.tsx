@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Link = ({ external = true, children, ...domProps }: Props) => {
+export const Link = ({ external = true, children, ...domProps }: LinkProps) => {
   return (
     <a
       target={external ? "_blank" : undefined}
@@ -12,7 +12,8 @@ export const Link = ({ external = true, children, ...domProps }: Props) => {
   );
 };
 
-export interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode | React.ReactNode[];
   external?: boolean;
 }

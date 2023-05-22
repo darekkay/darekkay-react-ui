@@ -8,7 +8,7 @@ export const TextArea = ({
   className,
   setValue,
   ...domProps
-}: Props) => {
+}: TextAreaProps) => {
   return (
     <Label text={label}>
       <textarea
@@ -26,7 +26,7 @@ export const TextArea = ({
   );
 };
 
-export interface Props
+export interface TextAreaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   setValue: (value: string) => void;

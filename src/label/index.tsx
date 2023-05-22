@@ -3,7 +3,12 @@ import clsx from "clsx";
 
 import { isEmpty } from "../utils";
 
-export const Label = ({ text, className, children, ...domProps }: Props) => {
+export const Label = ({
+  text,
+  className,
+  children,
+  ...domProps
+}: LabelProps) => {
   if (isEmpty(text)) return <>{children}</>;
   return (
     <label
@@ -16,7 +21,8 @@ export const Label = ({ text, className, children, ...domProps }: Props) => {
   );
 };
 
-export interface Props extends React.LabelHTMLAttributes<HTMLLabelElement> {
+export interface LabelProps
+  extends React.LabelHTMLAttributes<HTMLLabelElement> {
   text?: string;
   children?: React.ReactNode | React.ReactNode[];
 }

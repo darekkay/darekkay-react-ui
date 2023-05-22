@@ -1,7 +1,7 @@
-export { Button } from "./button/";
-export { Icon } from "./icon/";
-export { Input } from "./input/";
-export { Label } from "./label/";
-export { Link } from "./link/";
-export { Spinner } from "./spinner/";
-export { TextArea } from "./text-area/";
+export { Button, type ButtonProps } from "./button/";
+export { Icon, type IconProps } from "./icon/";
+export { Input, type InputProps } from "./input/";
+export { Label, type LabelProps } from "./label/";
+export { Link, type LinkProps } from "./link/";
+export { Spinner, type SpinnerProps } from "./spinner/";
+export { TextArea, type TextAreaProps } from "./text-area/";

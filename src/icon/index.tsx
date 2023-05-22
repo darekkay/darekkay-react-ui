@@ -14,7 +14,7 @@ export const Icon = ({
   position,
   className,
   ...rest
-}: Props) => {
+}: IconProps) => {
   const [width, height, name, svgPathData] = definition;
   return (
     <dk-icon
@@ -63,7 +63,7 @@ type IconSize =
 /** Icon position relative to another element. */
 type IconPosition = "left" | "right";
 
-export interface Props {
+export interface IconProps {
   definition: IconDefinition;
   title?: string;
   size?: IconSize;

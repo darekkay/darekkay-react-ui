@@ -6,7 +6,7 @@ import Label from "../label";
 import Icon from "../icon";
 import icons from "../icon/icons";
 
-const onKeyUp = (event: any, props: Props) => {
+const onKeyUp = (event: any, props: InputProps) => {
   if (event.key === "Enter" && props.onEnter) {
     props.onEnter(event.target.value);
   } else if (event.key === "Escape" && props.clearOnEscape) {
@@ -14,7 +14,7 @@ const onKeyUp = (event: any, props: Props) => {
   }
 };
 
-export const Input = (props: Props) => {
+export const Input = (props: InputProps) => {
   const {
     className,
     label,
@@ -74,7 +74,8 @@ export const Input = (props: Props) => {
   );
 };
 
-export interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   setValue: (value: string) => void;
   onEnter?: (value: string) => void;

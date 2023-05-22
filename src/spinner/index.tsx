@@ -1,7 +1,10 @@
 import React, { HTMLAttributes } from "react";
 import clsx from "clsx";
 
-export const Spinner = ({ className, ariaLabel = "Loading..." }: Props) => {
+export const Spinner = ({
+  className,
+  ariaLabel = "Loading...",
+}: SpinnerProps) => {
   return (
     // eslint-disable-next-line jsx-a11y/prefer-tag-over-role
     <dk-spinner
@@ -13,7 +16,7 @@ export const Spinner = ({ className, ariaLabel = "Loading..." }: Props) => {
   );
 };
 
-export interface Props {
+export interface SpinnerProps {
   className?: string;
   ariaLabel?: string;
 }
