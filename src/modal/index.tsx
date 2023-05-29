@@ -48,7 +48,9 @@ export const Modal = ({
           "py-6 border-bottom bg-offset": headline,
         })}
       >
-        {headline && <h2 className="mb-0 text-4 font-bold">{headline}</h2>}
+        {headline && (
+          <h2 className="mb-0 text-4 font-bold cursor-default">{headline}</h2>
+        )}
         <Button
           variant="unstyled"
           size="small"
