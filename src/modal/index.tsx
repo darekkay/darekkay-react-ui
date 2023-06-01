@@ -43,9 +43,9 @@ export const Modal = ({
     >
       {/* Modal header */}
       <div
-        className={clsx("flex items-center px-6", {
+        className={clsx("flex items-center px-3 md:px-6", {
           "py-3": !headline,
-          "py-6 border-bottom bg-offset": headline,
+          "py-4 md:py-6 border-bottom bg-offset": headline,
         })}
       >
         {headline && (
@@ -65,11 +65,11 @@ export const Modal = ({
       </div>
 
       {/* Modal content */}
-      <div className="modal-content p-6">{children}</div>
+      <div className="modal-content p-3 md:p-6">{children}</div>
 
       {/* Modal footer */}
       {renderFooter && (
-        <div className="flex flex-col md:flex-row justify-end p-6 gap-6 border-top bg-offset text-right">
+        <div className="flex flex-col md:flex-row justify-end p-3 md:p-6 gap-6 border-top bg-offset text-right">
           {renderFooter()}
         </div>
       )}
