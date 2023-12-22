@@ -8,7 +8,8 @@
     "email": "hello@darekkay.com"
   },
   "devDependencies": {
-    "@darekkay/scripts": "3.0.0",
+    "@darekkay/eslint-config": "5.0.1",
+    "@darekkay/scripts": "3.0.1",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
@@ -50,7 +51,7 @@
     "type": "git",
     "url": "https://github.com/darekkay/darekkay-react-ui.git"
   },
-  "resolutions": {
+  "overrides": {
     "string-width": "4.2.3",
     "wrap-ansi": "7.0.0"
   },
