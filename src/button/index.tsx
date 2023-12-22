@@ -17,7 +17,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       style,
       ...domProps
     }: ButtonProps,
-    ref
+    ref,
   ) => (
     <button
       className={clsx(
@@ -28,7 +28,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         { "border-0": !border },
         "justify-center",
         "no-underline",
-        className
+        className,
       )}
       style={style}
       type="button"
@@ -37,7 +37,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     >
       {children}
     </button>
-  )
+  ),
 );
 
 Button.displayName = "Button";

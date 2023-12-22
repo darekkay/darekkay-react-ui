@@ -14,13 +14,13 @@ describe("<Modal />", () => {
         ariaHideApp={false}
       >
         Content
-      </Modal>
+      </Modal>,
     );
 
   test("renders a headline when provided", () => {
     renderModal({ headline: "Modal headline" });
     expect(
-      screen.getByRole("heading", { name: /modal headline/i })
+      screen.getByRole("heading", { name: /modal headline/i }),
     ).toBeInTheDocument();
   });
 

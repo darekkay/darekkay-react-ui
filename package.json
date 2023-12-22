@@ -8,21 +8,21 @@
     "email": "hello@darekkay.com"
   },
   "devDependencies": {
-    "@darekkay/scripts": "2.6.1",
-    "@testing-library/jest-dom": "5.16.5",
+    "@darekkay/scripts": "3.0.0",
+    "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
-    "@types/jest": "29.5.1",
+    "@types/jest": "29.5.11",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/react-modal": "3.16.0",
-    "clsx": "1.2.1",
+    "clsx": "2.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-modal": "3.16.1",
-    "ts-jest": "29.1.0",
-    "tsup": "6.7.0",
-    "typescript": "5.0.4"
+    "ts-jest": "29.1.1",
+    "tsup": "8.0.1",
+    "typescript": "5.3.3"
   },
   "engines": {
     "node": ">=18.0.0"

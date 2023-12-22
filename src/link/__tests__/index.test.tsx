@@ -14,7 +14,7 @@ describe("<Link />", () => {
     const { rerender } = render(
       <Link href="https://example.com" external={false}>
         Link content
-      </Link>
+      </Link>,
     );
 
     const link = screen.getByRole("link", { name: /link content/i });
@@ -24,7 +24,7 @@ describe("<Link />", () => {
     rerender(
       <Link href="https://example.com" external>
         Link
-      </Link>
+      </Link>,
     );
     expect(link).toHaveAttribute("target", "_blank");
     expect(link).toHaveAttribute("rel", "noopener noreferrer");

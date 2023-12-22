@@ -46,7 +46,7 @@ export const Input = (props: InputProps) => {
             {
               "pr-7": isFocused,
             },
-            className
+            className,
           )}
           onChange={(event) => {
             setValue(event.target.value);

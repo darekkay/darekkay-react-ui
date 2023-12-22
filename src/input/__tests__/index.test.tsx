@@ -34,7 +34,7 @@ describe("<Input />", () => {
     render(<Input value="text" setValue={setValue} clearOnEscape />);
 
     expect(
-      screen.queryByRole("button", { hidden: true })
+      screen.queryByRole("button", { hidden: true }),
     ).not.toBeInTheDocument();
 
     const input = screen.getByRole("textbox");
@@ -43,7 +43,7 @@ describe("<Input />", () => {
 
     fireEvent.blur(input);
     expect(
-      screen.queryByRole("button", { hidden: true })
+      screen.queryByRole("button", { hidden: true }),
     ).not.toBeInTheDocument();
 
     fireEvent.focus(input);

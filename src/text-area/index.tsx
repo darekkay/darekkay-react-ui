@@ -15,7 +15,7 @@ export const TextArea = ({
         className={clsx(
           "py-2 px-4 w-full h-full border rounded resize-none bg-default",
           { "text-4": !className?.includes("text-") },
-          className
+          className,
         )}
         onChange={(event) => {
           setValue(event.target.value);

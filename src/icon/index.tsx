@@ -4,7 +4,7 @@ export type IconDefinition = [
   number, // width
   number, // height
   string, // name
-  string | string[] // svgPathData
+  string | string[], // svgPathData
 ];
 
 export const Icon = ({
